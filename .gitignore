@@ -33,3 +33,7 @@ pgdata/
 *.zip
 *.7z
 *.log
+.git/*.rar
+*.zip
+*.7z
+*.log
