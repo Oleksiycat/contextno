@@ -9,6 +9,37 @@ const LATIN_WORD_RE = /^[a-z]+$/i;
 const WORD_RE = /^[\p{Script=Cyrillic}a-z]+$/iu;
 const WORD_TOKEN_RE = /[\p{Script=Cyrillic}a-z]+/iu;
 const MIN_DICTIONARY_WORDS = 100000;
+const COMMON_CHAT_WORDS = new Set([
+  "я",
+  "ты",
+  "он",
+  "она",
+  "оно",
+  "мы",
+  "вы",
+  "они",
+  "и",
+  "а",
+  "но",
+  "да",
+  "нет",
+  "не",
+  "бы",
+  "ли",
+  "же",
+  "то",
+  "в",
+  "к",
+  "с",
+  "у",
+  "о",
+  "по",
+  "из",
+  "до",
+  "от",
+  "на",
+  "за",
+]);
 
 function loadRussianDictionary() {
   const content = readFileSync(DICTIONARY_PATH, "utf8");
@@ -49,12 +80,21 @@ export function isLatinWord(value) {
 
 export function isKnownRussianWord(value) {
   const word = normalizeWord(value);
-  return isRussianWord(word) && ruDict.has(word);
+  return isRussianWord(word) && (ruDict.has(word) || COMMON_CHAT_WORDS.has(word));
 }
 
 export function isAllowedGuess(value) {
   const word = normalizeWord(value);
-  return Boolean(word) && word.length >= 2 && word.length <= 40 && isKnownRussianWord(word);
+  return Boolean(word) && word.length <= 40 && isKnownRussianWord(word);
+}
+
+export function extractGuessWords(value) {
+  return [...new Set(
+    String(value || "")
+      .split(/[\|\r\n]+/)
+      .map((part) => normalizeWord(part))
+      .filter(Boolean),
+  )];
 }
 
 export function getRandomRussianWords(count, excludedWords = new Set()) {
@@ -81,7 +121,7 @@ export function validateGuessInput(value) {
     return { ok: false, error: "Введите слово." };
   }
 
-  if (word.length < 2 || word.length > 40 || !isValidWord(word)) {
+  if (word.length > 40 || !isValidWord(word)) {
     return {
       ok: false,
       error: "Только одно слово из букв, без пробелов и цифр.",

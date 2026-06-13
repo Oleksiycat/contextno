@@ -1,5 +1,5 @@
 import tmi from "tmi.js";
-import { isAllowedGuess, normalizeWord } from "../lib/words.js";
+import { extractGuessWords, isAllowedGuess, normalizeWord } from "../lib/words.js";
 
 function cleanChannel(value) {
   return String(value || "")
@@ -91,7 +91,8 @@ export class TwitchService {
   }
 
   async #handleMessage(roomId, channel, tags, rawText) {
-    const word = normalizeWord(rawText);
+    const words = extractGuessWords(rawText);
+    const displayText = words.length ? words.join(" | ") : normalizeWord(rawText);
     const username = `twitch:${getDisplayName(tags)}`;
     const meta = this.connections.get(channel);
 
@@ -102,23 +103,30 @@ export class TwitchService {
 
     this.io.to(`room:${roomId}`).emit("twitch:chat", {
       username,
-      text: word,
+      text: displayText,
       rawText,
-      valid: isAllowedGuess(word),
+      valid: words.some((word) => isAllowedGuess(word)),
     });
 
-    if (!isAllowedGuess(word)) {
-      this.io.to(`room:${roomId}`).emit("twitch:ignored", { username, word, reason: "invalid_word" });
+    if (!words.length) {
+      this.io.to(`room:${roomId}`).emit("twitch:ignored", { username, word: "", reason: "invalid_word" });
       return;
     }
 
-    const result = await this.gameService.processGuess(roomId, username, word);
-    if (!result?.ok) {
-      this.io.to(`room:${roomId}`).emit("twitch:ignored", {
-        username,
-        word,
-        reason: result?.reason || "not_processed",
-      });
+    for (const word of words) {
+      if (!isAllowedGuess(word)) {
+        this.io.to(`room:${roomId}`).emit("twitch:ignored", { username, word, reason: "invalid_word" });
+        continue;
+      }
+
+      const result = await this.gameService.processGuess(roomId, username, word);
+      if (!result?.ok) {
+        this.io.to(`room:${roomId}`).emit("twitch:ignored", {
+          username,
+          word,
+          reason: result?.reason || "not_processed",
+        });
+      }
     }
   }
 }

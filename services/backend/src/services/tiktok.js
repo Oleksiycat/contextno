@@ -1,7 +1,7 @@
 import { TikTokLiveConnection, WebcastEvent } from "tiktok-live-connector";
 import axios from "axios";
 import { prisma } from "../lib/prisma.js";
-import { getRandomRussianWords, isAllowedGuess, normalizeWord } from "../lib/words.js";
+import { extractGuessWords, getRandomRussianWords, isAllowedGuess, normalizeWord } from "../lib/words.js";
 import { selectHintWord } from "../lib/hint.js";
 
 const DEFAULT_AI_SERVICE_URL = "http://localhost:8001";
@@ -236,7 +236,8 @@ export class TikTokService {
   }
 
   async #handleChat(roomId, streamUsername, data) {
-    const word = normalizeWord(data.comment);
+    const words = extractGuessWords(data.comment);
+    const text = words.length ? words.join(" | ") : normalizeWord(data.comment);
     const username = getTikTokCommentUsername(data);
     const meta = this.connections.get(streamUsername);
 
@@ -247,27 +248,34 @@ export class TikTokService {
 
     this.io.to(`room:${roomId}`).emit("tiktok:chat", {
       username,
-      text: word,
+      text,
       rawText: data.comment || "",
-      valid: isAllowedGuess(word),
+      valid: words.some((word) => isAllowedGuess(word)),
     });
 
-    if (!isAllowedGuess(word)) {
-      this.#emitIgnored(roomId, { username, word, reason: "invalid_word" });
+    if (!words.length) {
+      this.#emitIgnored(roomId, { username, word: "", reason: "invalid_word" });
       return;
     }
 
-    const dupKey = `dup:${roomId}:${word}`;
-    if (await memoryStore.get(dupKey)) {
-      this.#emitIgnored(roomId, { username, word, reason: "duplicate" });
-      return;
-    }
-    await memoryStore.set(dupKey, "1", "EX", 30);
+    for (const word of words) {
+      if (!isAllowedGuess(word)) {
+        this.#emitIgnored(roomId, { username, word, reason: "invalid_word" });
+        continue;
+      }
 
-    const result = await this.processGuess(roomId, username, word);
-    if (!result?.ok) {
-      await memoryStore.del(dupKey);
-      this.#emitIgnored(roomId, { username, word, reason: result?.reason || "not_processed" });
+      const dupKey = `dup:${roomId}:${word}`;
+      if (await memoryStore.get(dupKey)) {
+        this.#emitIgnored(roomId, { username, word, reason: "duplicate" });
+        continue;
+      }
+      await memoryStore.set(dupKey, "1", "EX", 30);
+
+      const result = await this.processGuess(roomId, username, word);
+      if (!result?.ok) {
+        await memoryStore.del(dupKey);
+        this.#emitIgnored(roomId, { username, word, reason: result?.reason || "not_processed" });
+      }
     }
   }
 

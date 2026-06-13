@@ -3,6 +3,6 @@ setlocal
 
 cd /d "%~dp0"
 
-node set.js
+node "%~dp0set.js"
 
 endlocal

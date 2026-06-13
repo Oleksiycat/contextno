@@ -1,9 +1,10 @@
-const fs = require("node:fs");
-const net = require("node:net");
-const path = require("node:path");
-const { spawn, spawnSync } = require("node:child_process");
+import fs from "node:fs";
+import net from "node:net";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { spawn, spawnSync } from "node:child_process";
 
-const rootDir = __dirname;
+const rootDir = path.dirname(fileURLToPath(import.meta.url));
 const isWindows = process.platform === "win32";
 const nodeBinary = process.execPath;
 const nodeDir = path.dirname(process.execPath);
@@ -241,7 +242,7 @@ function cleanPrismaEngineFiles() {
     try {
       fs.rmSync(filePath, { force: true });
       log(`Removed Prisma engine file: ${entry}`);
-    } catch (error) {
+    } catch {
       log(`Could not remove ${entry}; it may still be locked.`);
     }
   }

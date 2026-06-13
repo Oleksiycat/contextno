@@ -1,0 +1,11 @@
+{
+  "name": "kontekstno-root",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "services/backend"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  }
+}

@@ -13,6 +13,9 @@ const DEFAULT_SETTINGS = { tiktokUsername: "", twitchUsername: "leee1n", roomId:
 
 export default function GamePage() {
   const [guesses, setGuesses] = useState([]);
+  const [lastGuess, setLastGuess] = useState(null);
+  const [twitchMessages, setTwitchMessages] = useState([]);
+  const [tiktokMessages, setTiktokMessages] = useState([]);
   const [input, setInput] = useState("");
   const [attempts, setAttempts] = useState(0);
   const [winner, setWinner] = useState(null);
@@ -30,6 +33,16 @@ export default function GamePage() {
   const [lastError, setLastError] = useState("");
   const socketRef = useRef(null);
 
+  const pushChatMessage = (setter, message) => {
+    setter((prev) => [message, ...prev].slice(0, 12));
+  };
+
+  const getChatMessageWidth = (text) => {
+    const length = String(text || "").trim().length;
+    const width = Math.min(92, Math.max(58, 36 + Math.min(length * 2.15, 40)));
+    return `${width}%`;
+  };
+
   const loadRoundState = async (roomId) => {
     try {
       const { data } = await axios.get(`${API_URL}/api/game/state`, { params: { roomId } });
@@ -37,8 +50,11 @@ export default function GamePage() {
 
       setGuesses(data.guesses || []);
       setAttempts((data.guesses || []).length);
+      setLastGuess((data.guesses || []).at(-1) || null);
       setWinner(null);
       setHint(data.round.hint || "");
+      setTiktokMessages([]);
+      setTwitchMessages([]);
       setLastTikTokIgnored(null);
       setLastTwitchIgnored(null);
       setLastError("");
@@ -79,15 +95,30 @@ export default function GamePage() {
     socket.on("tiktok:error", (data) => {
       setLastError(`TikTok connection error (@${data.tiktokUsername}): ${data.error}`);
     });
-    socket.on("tiktok:chat", setLastTikTokChat);
+    socket.on("tiktok:chat", (data) => {
+      setLastTikTokChat(data);
+      pushChatMessage(setTiktokMessages, {
+        platform: "TikTok",
+        username: data.username || "user",
+        text: data.text || data.rawText || "",
+      });
+    });
     socket.on("tiktok:ignored", setLastTikTokIgnored);
     socket.on("twitch:error", (data) => {
       setLastError(`Twitch connection error (#${data.channel}): ${data.error}`);
     });
-    socket.on("twitch:chat", setLastTwitchChat);
+    socket.on("twitch:chat", (data) => {
+      setLastTwitchChat(data);
+      pushChatMessage(setTwitchMessages, {
+        platform: "Twitch",
+        username: data.username || "user",
+        text: data.text || data.rawText || "",
+      });
+    });
     socket.on("twitch:ignored", setLastTwitchIgnored);
 
     socket.on("guess", (data) => {
+      setLastGuess(data);
       setGuesses((prev) => upsertGuess(prev, data));
       setAttempts((value) => value + 1);
       setLoadingGuess(false);
@@ -99,6 +130,9 @@ export default function GamePage() {
     });
     socket.on("round:started", (data) => {
       setGuesses([]);
+      setLastGuess(null);
+      setTiktokMessages([]);
+      setTwitchMessages([]);
       setAttempts(0);
       setWinner(null);
       setHint(data?.hint || "");
@@ -108,6 +142,9 @@ export default function GamePage() {
     });
     socket.on("game:reset", () => {
       setGuesses([]);
+      setLastGuess(null);
+      setTiktokMessages([]);
+      setTwitchMessages([]);
       setAttempts(0);
       setWinner(null);
       setHint("");
@@ -194,6 +231,7 @@ export default function GamePage() {
       });
 
       setGuesses((prev) => upsertGuess(prev, data));
+      setLastGuess(data);
       setAttempts((value) => value + 1);
       if (data.rank <= 1) setWinner({ username: data.username || "Ты", word: data.secretWord || validation.word });
     } catch (error) {
@@ -236,6 +274,7 @@ export default function GamePage() {
       });
 
       setGuesses((prev) => upsertGuess(prev, data));
+      setLastGuess(data);
       setAttempts((value) => value + 1);
       if (data.rank <= 1) setWinner({ username: data.username || "hint_bot", word: data.secretWord || data.word });
     } catch (error) {
@@ -255,6 +294,9 @@ export default function GamePage() {
       }
 
       setGuesses([]);
+      setLastGuess(null);
+      setTiktokMessages([]);
+      setTwitchMessages([]);
       setAttempts(0);
       setWinner(null);
       setHint("");
@@ -306,8 +348,14 @@ export default function GamePage() {
               <h3 style={{ marginTop:24, marginBottom:8, fontSize:16, fontWeight:600 }}>Управление игрой</h3>
               <input
                 className="input-kontekst secret-input"
-                type="password"
-                autoComplete="new-password"
+                type="text"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
+                name="secret-word"
+                data-lpignore="true"
+                data-1p-ignore="true"
                 placeholder="Секретное слово (можно оставить пустым)"
                 value={adminWord}
                 onChange={(event) => setAdminWord(event.target.value)}
@@ -338,26 +386,81 @@ export default function GamePage() {
           </button>
         </header>
 
-        {lastTikTokChat && (
-          <div className="tiktok-line">
-            TikTok chat: @{lastTikTokChat.username || "user"}: {lastTikTokChat.text || lastTikTokChat.rawText}
-          </div>
-        )}
-        {lastTikTokIgnored && (
-          <div className="tiktok-line tiktok-warning">
-            TikTok не добавил слово "{lastTikTokIgnored.word}": {lastTikTokIgnored.reason}
-          </div>
-        )}
-        {lastTwitchChat && (
-          <div className="tiktok-line">
-            Twitch chat: @{lastTwitchChat.username || "user"}: {lastTwitchChat.text || lastTwitchChat.rawText}
-          </div>
-        )}
-        {lastTwitchIgnored && (
-          <div className="tiktok-line tiktok-warning">
-            Twitch не добавил слово "{lastTwitchIgnored.word}": {lastTwitchIgnored.reason}
-          </div>
-        )}
+        <div className="chat-row">
+          <section className="chat-panel chat-panel-twitch">
+            <div className="chat-panel-shell">
+              <div className="chat-panel-head">
+                <div>
+                  <div className="chat-panel-title">Twitch</div>
+                  <div className="chat-panel-subtitle">Живой поток сообщений</div>
+                </div>
+                <div className="chat-panel-pill">LIVE</div>
+              </div>
+              <div className="chat-panel-stream">
+                {twitchMessages.length ? (
+                  twitchMessages.map((message, index) => (
+                    <div
+                      key={`${message.username}-${index}-${message.text}`}
+                      className="chat-message chat-message-twitch"
+                      style={{
+                        width: getChatMessageWidth(message.text),
+                        alignSelf: "flex-start",
+                      }}
+                    >
+                      <div className="chat-message-accent" />
+                      <div className="chat-message-user">#{message.username}</div>
+                      <div className="chat-message-text">{message.text}</div>
+                    </div>
+                  ))
+                ) : (
+                  <div className="chat-panel-empty">Сообщений пока нет</div>
+                )}
+              </div>
+              {lastTwitchIgnored && (
+                <div className="chat-panel-warning">
+                  Не добавлено: "{lastTwitchIgnored.word}" ({lastTwitchIgnored.reason})
+                </div>
+              )}
+            </div>
+          </section>
+
+          <section className="chat-panel chat-panel-tiktok">
+            <div className="chat-panel-shell">
+              <div className="chat-panel-head">
+                <div>
+                  <div className="chat-panel-title">TikTok</div>
+                  <div className="chat-panel-subtitle">Живой поток сообщений</div>
+                </div>
+                <div className="chat-panel-pill chat-panel-pill-alt">LIVE</div>
+              </div>
+              <div className="chat-panel-stream">
+                {tiktokMessages.length ? (
+                  tiktokMessages.map((message, index) => (
+                    <div
+                      key={`${message.username}-${index}-${message.text}`}
+                      className="chat-message chat-message-tiktok"
+                      style={{
+                        width: getChatMessageWidth(message.text),
+                        alignSelf: "flex-start",
+                      }}
+                    >
+                      <div className="chat-message-accent" />
+                      <div className="chat-message-user">@{message.username}</div>
+                      <div className="chat-message-text">{message.text}</div>
+                    </div>
+                  ))
+                ) : (
+                  <div className="chat-panel-empty">Сообщений пока нет</div>
+                )}
+              </div>
+              {lastTikTokIgnored && (
+                <div className="chat-panel-warning">
+                  Не добавлено: "{lastTikTokIgnored.word}" ({lastTikTokIgnored.reason})
+                </div>
+              )}
+            </div>
+          </section>
+        </div>
 
         <div style={{ marginBottom:10 }}>
           <div className="tip-container">
@@ -393,6 +496,20 @@ export default function GamePage() {
             </svg>
           </button>
         </div>
+
+        {lastGuess && (() => {
+          const color = getColor(lastGuess.rank);
+          const width = getWidth(lastGuess.rank);
+          return (
+            <div className="last-word-list">
+              <div className={`result-item result-rank-${color} new-item last-word-item`}>
+                <div className={`result-fill fill-${color}`} style={{ width: `${width}%` }} />
+                <span className="result-word">{lastGuess.secretWord || lastGuess.word}</span>
+                <span className="result-score">{typeof lastGuess.rank === "number" ? lastGuess.rank : "—"}</span>
+              </div>
+            </div>
+          );
+        })()}
 
         {winner && (
           <div className="completed">
@@ -469,7 +586,7 @@ export default function GamePage() {
             background-size: 26px 26px;
             animation: driftReverse 22s linear infinite;
           }
-          .game-header, .tip-container, .game-info, .game-input-row, .completed, .restart-button, .results-list, .tiktok-line {
+          .game-header, .tip-container, .game-info, .game-input-row, .completed, .restart-button, .results-list, .chat-row {
             position: relative;
             z-index: 1;
           }
@@ -532,6 +649,14 @@ export default function GamePage() {
             box-shadow: 0 0 0 3px rgba(0,186,124,.16), 0 10px 28px rgba(0,0,0,.18);
             transform: translateY(-1px);
           }
+          .last-word-list {
+            width: 480px;
+            margin: -2px 0 12px;
+            display: grid;
+            gap: 5px;
+            animation: fadeIn .25s ease both;
+          }
+          .last-word-item { animation-delay: 0s; }
           .send-button {
             width: 40px; height: 48px; border-radius: 4px; display: flex;
             align-items: center; justify-content: center; flex-shrink: 0;
@@ -559,8 +684,187 @@ export default function GamePage() {
             animation: popIn .35s ease both;
           }
           .restart-button:hover { transform: rotate(120deg) scale(1.08); box-shadow: 0 10px 24px rgba(0,186,124,.28); }
-          .tiktok-line { width: 480px; margin-bottom: 10px; color: #9fb3c8; font-size: 12px; text-align: center; animation: fadeIn .25s ease both; }
-          .tiktok-warning { color: #ef7d31; }
+          .chat-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            width: 480px;
+            margin-bottom: 16px;
+            animation: fadeIn .25s ease both;
+          }
+          .chat-panel {
+            position: relative;
+            min-height: 320px;
+            padding: 14px;
+            border-radius: 18px;
+            border: 1px solid rgba(255,255,255,.12);
+            overflow: hidden;
+            box-shadow: 0 18px 42px rgba(0,0,0,.22);
+            backdrop-filter: blur(12px);
+            isolation: isolate;
+          }
+          .chat-panel-twitch {
+            border-color: rgba(145, 90, 255, .38);
+            background:
+              radial-gradient(circle at 18% 12%, rgba(145,90,255,.32), transparent 34%),
+              radial-gradient(circle at 82% 28%, rgba(255,255,255,.10), transparent 28%),
+              linear-gradient(135deg, rgba(54,25,98,.82), rgba(20,16,34,.9));
+            animation: panelShift 12s ease-in-out infinite alternate;
+          }
+          .chat-panel-tiktok {
+            border-color: rgba(0, 186, 124, .38);
+            background:
+              radial-gradient(circle at 82% 12%, rgba(0,186,124,.32), transparent 34%),
+              radial-gradient(circle at 20% 30%, rgba(255,255,255,.08), transparent 26%),
+              linear-gradient(135deg, rgba(0,77,58,.82), rgba(13,22,24,.9));
+            animation: panelShift 14s ease-in-out infinite alternate-reverse;
+          }
+          .chat-panel::before {
+            content: "";
+            position: absolute;
+            inset: -30%;
+            background:
+              linear-gradient(115deg, transparent 35%, rgba(255,255,255,.08) 50%, transparent 65%);
+            transform: translateX(-18%);
+            animation: sheen 6.5s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+          }
+          .chat-panel::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(255,255,255,.05), transparent 55%);
+            pointer-events: none;
+            z-index: 0;
+          }
+          .chat-panel-shell {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100%;
+          }
+          .chat-panel-head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+          }
+          .chat-panel-subtitle {
+            margin-top: 2px;
+            font-size: 11px;
+            color: rgba(255,255,255,.65);
+            letter-spacing: .03em;
+          }
+          .chat-panel-pill {
+            min-width: 46px;
+            height: 24px;
+            padding: 0 10px;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .12em;
+            background: rgba(255,255,255,.14);
+            color: #fff;
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+          }
+          .chat-panel-pill-alt {
+            background: rgba(0,186,124,.18);
+          }
+          .chat-panel-stream {
+            flex: 1;
+            overflow: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 8px;
+            padding-right: 4px;
+            scroll-behavior: smooth;
+          }
+          .chat-panel-title {
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 1;
+          }
+          .chat-message {
+            position: relative;
+            padding: 10px 12px 10px 15px;
+            border-radius: 16px 18px 18px 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,.1);
+            box-shadow: 0 10px 22px rgba(0,0,0,.18);
+            transform-origin: left center;
+            animation: messageIn .28s ease both;
+          }
+          .chat-message-twitch {
+            background: linear-gradient(135deg, rgba(132,87,228,.22), rgba(58,28,106,.72));
+          }
+          .chat-message-tiktok {
+            background: linear-gradient(135deg, rgba(0,186,124,.18), rgba(10,72,54,.72));
+          }
+          .chat-message-accent {
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 4px;
+            border-radius: 16px 0 0 16px;
+            background: rgba(255,255,255,.2);
+            z-index: 1;
+          }
+          .chat-message-twitch .chat-message-accent {
+            background: linear-gradient(180deg, #a970ff, #6441a5);
+          }
+          .chat-message-tiktok .chat-message-accent {
+            background: linear-gradient(180deg, #25f4ee, #fe2c55);
+          }
+          .chat-message::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(255,255,255,.06), transparent 45%);
+            pointer-events: none;
+          }
+          .chat-message-user {
+            position: relative;
+            z-index: 1;
+            font-size: 11px;
+            font-weight: 700;
+            color: rgba(255,255,255,.72);
+            margin-bottom: 4px;
+            letter-spacing: .03em;
+          }
+          .chat-message-text {
+            position: relative;
+            z-index: 1;
+            font-size: 13px;
+            color: #fff;
+            word-break: break-word;
+            line-height: 1.32;
+          }
+          .chat-panel-empty {
+            color: rgba(255,255,255,.72);
+            font-size: 13px;
+            min-height: 88px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            border: 1px dashed rgba(255,255,255,.16);
+            background: rgba(255,255,255,.04);
+          }
+          .chat-panel-warning {
+            margin-top: auto;
+            font-size: 12px;
+            color: #ef7d31;
+            line-height: 1.3;
+          }
           .settings-overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,.6); z-index: 100;
             display: flex; align-items: center; justify-content: center;
@@ -606,8 +910,22 @@ export default function GamePage() {
           @keyframes spinSpark { to { transform: rotate(360deg); } }
           @keyframes drift { to { transform: translate3d(22px, 22px, 0); } }
           @keyframes driftReverse { to { transform: translate3d(-26px, -26px, 0); } }
+          @keyframes panelShift {
+            from { background-position: 0% 0%; }
+            to { background-position: 100% 100%; }
+          }
+          @keyframes sheen {
+            from { transform: translateX(-24%) rotate(0deg); }
+            to { transform: translateX(24%) rotate(0deg); }
+          }
+          @keyframes messageIn {
+            from { opacity: 0; transform: translateY(8px) scale(.985); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+          }
           @media (max-width: 480px) {
-            .game-header, .game-info, .game-input-row, .results-list, .completed, .tiktok-line { width: 100%; }
+            .game-header, .game-info, .game-input-row, .results-list, .completed, .chat-row, .last-word-list { width: 100%; }
+            .chat-row { grid-template-columns: 1fr; }
+            .chat-panel { min-height: 240px; }
             .settings-panel { width: calc(100% - 32px); }
             .ambient { display: none; }
           }

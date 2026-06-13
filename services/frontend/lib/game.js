@@ -16,7 +16,7 @@ export function validateWordInput(value) {
   const word = normalizeWord(value);
 
   if (!word) return { ok: false, error: "Введите слово." };
-  if (word.length < 2 || word.length > 40 || !isValidWord(word)) {
+  if (word.length > 40 || !isValidWord(word)) {
     return { ok: false, error: "Только одно слово из букв, без пробелов и цифр." };
   }
 
