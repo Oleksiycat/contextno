@@ -21,3 +21,7 @@ pgdata/
 *.tar.gz
 *.tgz
 *.bak
+*.rar
+*.zip
+*.7z
+*.log
