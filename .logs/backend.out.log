@@ -1,0 +1,1011 @@
+
+> kontekstno-backend@1.0.0 dev
+> node --watch src/index.js
+
+Backend running on :3001
+[Game] Auto-started first round in room with word "привет"
+[Game] Auto-submitted first guess "яйцо" as web_user
+[TikTok] Ignored "@li lek 🥳🥳🥳" from @user9839616886312 in room: invalid_word
+[TikTok] Ignored "@наталу 🙏🏻😃" from @lilek69 in room: invalidRestarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Backend running on :3001
+[Game] Auto-started first round in room with word "привет"
+[Game] Auto-submitted first guess "яйцо" as web_user
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Waiting for graceful termination...
+Gracefully restarted 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Backend running on :3001
+[Game] Auto-started first round in room
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Backend running on :3001
+[Game] Auto-started first round in room
+Restarting 'src/index.js'
+Waiting for graceful termination...
+Gracefully restarted 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+ed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Waiting for graceful termination...
+Gracefully restarted 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+tarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+g for graceful termination...
+Gracefully restarted 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+rc/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+@buler_qr in room: invalid_word
+[TikTok] Ignored "работа" from @mememe_067_ in room: no_active_round
+[TikTok] Ignored "работа" from @mememe_067_ in room: no_active_round
+[TikTok] Ignored "работа" from @mememe_067_ in room: no_active_round
+[TikTok] Ignored "кнопка" from @buler_qr in room: no_active_round
+[TikTok] Ignored "связь" from @tweedlexlx in room: no_active_round
+[TikTok] Ignored "автоответчик" from @tweedlexlx in room: invalid_word
+[TikTok] Ignored "оплат а" from @buler_qr in room: invalid_word
+[TikTok] Ignored "я отойду на 5 мин" from @iuliabelokonnaya in room: invalid_word
+[TikTok] Ignored "хороший, но придумать сложно" from @tweedlexlx in room: invalid_word
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Waiting for graceful termination...
+Gracefully restarted 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Backend running on :3001
+[Game] Auto-started first round in room
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Backend running on :3001
+[Game] Auto-started first round in room
+[Twitch] Connected to #leee1n in room room
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Backend running on :3001
+[Game] Auto-started first round in room
+[Twitch] Connected to #leee1n in room room
+[TikTok] Connected to @leee1n in room room
+[TikTok] TikTok room id: 7650917007631878932
+[TikTok] Ignored "привет" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "курица" from @paleonoff in room: waiting_for_starter
+[TikTok] Ignored "стейк" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "гриль" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "индейка" from @paleonoff in room: waiting_for_starter
+[TikTok] Ignored "павлин" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "жаба" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "гриль" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "индюшина" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "утка" from @he_skill2 in room: waiting_for_starter
+[TikTok] IgnoreRestarting 'src/index.js'
+Backend running on :3001
+[Game] Auto-started first round in room
+[TikTok] Ignored "" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "почка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "почти" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "лазер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "кипяток" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "пар" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "пар" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "кипяток" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "лазер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "почти" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "почка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Connected to @leee1n in room room
+[TikTok] TikTok room id: 7650917007631878932
+[TikTok] Ignored "" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "пар" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "лазер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "кипяток" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "почка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "почти" from @vlados2307 in room: waiting_for_starter
+[TikTok] Connected to @leee1n in room room
+[TikTok] TikTok room id: 7650917007631878932
+[TikTok] Ignored "" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "почка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "почти" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "пар" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "кипяток" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "лазер" from @vlados2307 in room: waiting_for_starter
+[Twitch] Connected to #leee1n in room room
+[TikTok] Ignored "вода" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "почти" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "пар" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "кипяток" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "лазер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "вода" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "вода" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "почти" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "кипяток" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "пар" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "лазер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "вода" from @he_skill2 in room: waiting_for_starter
+[Twitch] Connected to #leee1n in room room
+[TikTok] Connected to @leee1n in room room
+[TikTok] TikTok room id: 7650917007631878932
+[TikTok] Ignored "" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "лазер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "кипяток" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "вода" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "пар" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "почти" from @vlados2307 in room: waiting_for_starter
+[TikTok] Connected to @leee1n in room room
+[TikTok] TikTok room id: 7650917007631878932
+[Twitch] Connected to #leee1n in room room
+[TikTok] Ignored "" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "почти" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "кипяток" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "лазер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "вода" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "пар" from @he_skill2 in room: waiting_for_starter
+[Twitch] Connected to #leee1n in room room
+[TikTok] Ignored "капуста" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "капуста" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "капуста" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "капуста" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "зелень" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "зелень" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "зелень" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "редиска" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "редиска" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "редиска" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "редиска" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "привет" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "привет" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "привет" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "привет" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "овощ" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "салат" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "салат" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "овощ" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "салат" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "овощ" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "овощ" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "та" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "та" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "та" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "та" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лук" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "лук" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "лук" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "эфир" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "эфир" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "эфир" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "салат" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "салат" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "салат" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "укроп" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "укроп" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "укроп" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "укроп" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "чеснок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "чеснок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "чеснок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "чеснок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "щавель" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "щавель" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "щавель" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "щавель" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "картоха" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "картоха" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "картоха" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "картоха" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "лук" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лук" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лук" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лук" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "чеснок" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "чеснок" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "чеснок" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "чеснок" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "было" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "было" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "было" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "черемша" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "черемша" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "черемша" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "черемша" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "огурец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "огурец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "огурец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "помидор" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "помидор" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "помидор" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "помидор" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сосиска" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "сосиска" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "сосиска" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "помидоры" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "помидоры" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "помидоры" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "помидоры" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "петрушка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "петрушка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "петрушка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "петрушка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "не" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "не" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "не" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "не" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "цветок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "цветок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "цветок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "цветок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "поле" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "поле" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "яблоко" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "трава" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "трава" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "поле" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "яблоко" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "трава" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "яблоко" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "трава" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "яблоко" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "трава" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "трава" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "трава" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "трава" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "поле" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "поле" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "поле" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "поле" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "виноград" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "виноград" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "виноград" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "виноград" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "фрукт" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "фрукт" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "фрукт" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "фрукт" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дерево" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дерево" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дерево" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дерево" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "черешня" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "черешня" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "черешня" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "черешня" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "вишня" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вишня" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вишня" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вишня" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вишня" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вишня" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вишня" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "персик" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "персик" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "персик" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "персик" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "слива" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "слива" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "слива" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "слива" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "смородина" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "смородина" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "смородина" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "смородина" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "черника" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "черника" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "черника" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "ежевика" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ежевика" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ежевика" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ежевика" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "голубика" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "голубика" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "голубика" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "голубика" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "шелковица" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "апельсин" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "шелковица" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "апельсин" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "апельсин" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "шелковица" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "шелковица" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "апельсин" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "нектарин" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "нектарин" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "нектарин" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "нектарин" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "орех" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "орех" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "орех" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "орех" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "тыква" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "тыква" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "тыква" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "тыква" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "еда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "еда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "еда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "еда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "арбуз" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "арбуз" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "арбуз" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "арбуз" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "листок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "листок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "бана" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "бана" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "бана" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "бана" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "банан" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "банан" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "банан" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "слива" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "слива" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "слива" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "банан" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "слива" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "хамам" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "хамам" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "хамам" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "хамам" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "вареньк" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "вареньк" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "вареньк" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "вареньк" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "персик" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "персик" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "персик" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "персик" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "абрикос" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "абрикос" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "абрикос" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "абрикос" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "сахар" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сахар" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сахар" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сахар" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "голубина" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "голубина" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "голубина" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "голубина" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "голубика" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "голубика" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "голубика" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "голубика" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "сад" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сад" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сад" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сад" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дерево" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "дерево" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "дерево" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "дерево" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "скорлупка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "скорлупка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "скорлупка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "клумба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "клумба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "клумба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "клумба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "земля" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "земля" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "земля" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "сакура" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сакура" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сакура" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сакура" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вареники" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "вареники" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "вареники" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "компот" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "компот" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "компот" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вареники" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "компот" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "персик" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "персик" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "персик" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "персик" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "банан" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "банан" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "банан" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "банан" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "манго" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "манго" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "манго" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "манго" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "цветок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "цветок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "цветок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "цветок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "ананас" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "ананас" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "ананас" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "ананас" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "гвоздика" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "гвоздика" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "гвоздика" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "гвоздика" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "емае" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "емае" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "емае" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "емае" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "ну" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ну" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ну" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "даааа" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "ну" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "даааа" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "даааа" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "даааа" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "дуб" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "береза" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "береза" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "сосна" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "сосна" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "береза" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "сосна" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "береза" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "сосна" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дуб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сосна" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сосна" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сосна" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сосна" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лен" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "лен" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "лен" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "тополя" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "тополя" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "тополя" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "тополя" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "лен" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "елка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "елка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "елка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "елка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "береза" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "береза" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "береза" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "тополь" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "тополь" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "тополь" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "тополь" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "пух" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "пух" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "пух" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "пух" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "пух" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дурман" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "дурман" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "пух" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "пух" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дурман" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "шелковица" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ой" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ой" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ой" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "корни" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "корни" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "корни" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "корни" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "акация" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "акация" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "акация" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "не" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "не" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "не" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "не" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "ветка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "ветка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "ветка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "ветка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "листья" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "листья" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "листья" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "листья" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "сирень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сирень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сирень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сирень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сирень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сирень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сирень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дима" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "дима" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "дима" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "дима" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "сирень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "давай" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "давай" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "давай" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "назови" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "назови" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "назови" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "назови" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "лаванда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лаванда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лаванда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лаванда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "ника" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "ника" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "ника" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "ника" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "пиздец" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "пиздец" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "пиздец" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "пиздец" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "смола" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "смола" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "смола" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "смола" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "осина" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "осина" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "осина" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "осина" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "дупло" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "дупло" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "дупло" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "дупло" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "липа" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "липа" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "липа" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "липа" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "липа" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "липа" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "липа" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "липа" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "пион" from @verrkkipp in room: waiting_for_starter
+[TikTok] Ignored "пион" from @verrkkipp in room: waiting_for_starter
+[TikTok] Ignored "пион" from @verrkkipp in room: waiting_for_starter
+[TikTok] Ignored "ясень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "ясень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "ясень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "ясень" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "саженец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "саженец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "саженец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "куст" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "куст" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "каштан" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "каштан" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "каштан" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "каштан" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "я" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "я" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "я" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "я" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "яйцл" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "яйцл" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "яйцл" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "яйцл" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "еда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "еда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "еда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "еда" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "круг" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "врач" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "круг" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "врач" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "врач" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "круг" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "круг" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "врач" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "а" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "а" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "а" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "а" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "сервер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "сервер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "сервер" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "мясо" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "мясо" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "мясо" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "мясо" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "мясо" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "мясо" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "мясо" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "вода" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "вода" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "каштан" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "каштан" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "каштан" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "выпечка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "выпечка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "выпечка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "выпечка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "сон" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сон" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сон" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сон" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "блюдо" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "блюдо" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "блюдо" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "блюдо" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "гридь" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "гридь" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "гридь" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "гридь" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "океан" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "океан" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "океан" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "шашлычок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "шашлычок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "булочка" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "булочка" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "булочка" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "булочка" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "уголь" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "жаркое" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "уголь" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "жаркое" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "уголь" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "жаркое" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "жаркое" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "уголь" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "стейк" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "стейк" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "стейк" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "стейк" from @vlados2307 in room: invalid_word
+[TikTok] Ignored "пирожки" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "пирожки" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "пирожки" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "пирожки" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "барбекю" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "барбекю" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "барбекю" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "барбекю" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "печка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "печка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "печка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "печка" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "пирог" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "пирог" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "пирог" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "торт" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "торт" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "торт" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "торт" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "пирожоное" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "пирожоное" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "пирожоное" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "пирожоное" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "бургеры" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бургеры" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бургеры" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бургеры" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бургер" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бургер" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бургер" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бургер" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бисквит" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "бисквит" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "бисквит" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "шаурма" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "шаурма" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "шаурма" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "шаурма" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "бутерброд" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "бутерброд" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "бутерброд" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "торт" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "торт" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "торт" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "торт" from @vlados2307 in room: waiting_for_starter
+[TikTok] Ignored "напиток" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "напиток" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "напиток" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "напиток" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "молочка" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "молочка" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "молочка" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "молочка" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "минеральная" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "минеральная" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "минеральная" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "минеральная" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "йогурт" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "йогурт" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "йогурт" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "белок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "белок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "белок" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сыр" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "сыр" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "сыр" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "сыр" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "творог" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "творог" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "творог" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "творог" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "хлеб" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "масо" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "масо" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "масо" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "масо" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "намазка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "намазка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "намазка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "намазка" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сахар" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "сахар" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "сахар" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "сахар" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "масло" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "масло" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "масло" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "масло" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "соль" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "соль" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "соль" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "соль" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "перец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "перец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "перец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "перец" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "мухомор" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "мухомор" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "макароны" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "макароны" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "макароны" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "макароны" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "спагети" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "спагети" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "спагети" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "спагети" from @he_skill2 in room: invalid_word
+[TikTok] Ignored "специи" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "зубы" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "специи" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "зубы" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "специи" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "зубы" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "специи" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "зубы" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "кушать" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "кушать" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "кушать" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "креветки" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "креветки" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "креветки" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "креветки" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "мир" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "мир" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "мир" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "мир" from @he_skill2 in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "рыба" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "лимон" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "лимон" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "лимон" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "емае" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "емае" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "емае" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "емае" from @mememe_067_ in room: invalid_word
+[TikTok] Ignored "карбонара" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "карбонара" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "карбонара" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "карбонара" from @evgeschka_14 in room: invalid_word
+[TikTok] Ignored "сливки" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сливки" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сливки" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "сливки" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "десерт" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "десерт" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "десерт" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "десерт" from @mememe_067_ in room: waiting_for_starter
+[TikTok] Ignored "желе" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "желе" from @evgeschka_14 in room: waiting_for_starter
+[TikTok] Ignored "желе" from @evgeschka_14 in room: waiting_for_starter

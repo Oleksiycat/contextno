@@ -1,0 +1,45 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: kontekstno
+      POSTGRES_PASSWORD: kontekstno
+      POSTGRES_DB: kontekstno
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+
+  redis:
+    image: redis:7-alpine
+    restart: always
+    ports: ["6379:6379"]
+
+  ai:
+    build: ./services/ai-service
+    restart: always
+    ports: ["8001:8001"]
+    environment:
+      - MODEL_NAME=paraphrase-multilingual-MiniLM-L12-v2
+
+  backend:
+    build: ./services/backend
+    restart: always
+    ports: ["3001:3001"]
+    depends_on: [postgres, redis, ai]
+    environment:
+      DATABASE_URL: postgresql://kontekstno:kontekstno@postgres:5432/kontekstno
+      REDIS_URL: redis://redis:6379
+      AI_SERVICE_URL: http://ai:8001
+      JWT_SECRET: supersecret_change_me
+
+  frontend:
+    build: ./services/frontend
+    restart: always
+    ports: ["3000:3000"]
+    depends_on: [backend]
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:3001
+
+volumes:
+  pgdata:

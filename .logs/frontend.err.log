@@ -1,0 +1,45 @@
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'E:\System Volume Information'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'E:\System Volume Information'
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next.js'
+Require stack:
+- E:\conte\kontekstno\services\frontend\.next\server\webpack-runtime.js
+- E:\conte\kontekstno\services\frontend\.next\server\pages\_document.js
+- E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\require.js
+- E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\load-components.js
+- E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\utils.js
+- E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\dev\hot-middleware.js
+- E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\lib\router-server.js
+- E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1476:15)
+    at E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1576:12)
+    at mod.require (E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at o.f.require (E:\conte\kontekstno\services\frontend\.next\server\webpack-runtime.js:1:1888)
+    at E:\conte\kontekstno\services\frontend\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (E:\conte\kontekstno\services\frontend\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'E:\\conte\\kontekstno\\services\\frontend\\.next\\server\\webpack-runtime.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\.next\\server\\pages\\_document.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\node_modules\\next\\dist\\server\\require.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\node_modules\\next\\dist\\server\\load-components.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\node_modules\\next\\dist\\build\\utils.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'E:\\conte\\kontekstno\\services\\frontend\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/dashboard'
+}

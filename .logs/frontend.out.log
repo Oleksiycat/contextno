@@ -1,0 +1,42 @@
+
+> kontekstno-frontend@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 8.2s
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 9.4s (405 modules)
+ GET /_next/static/webpack/46b99dbb374f60d8.webpack.hot-update.json 404 in 10027ms
+ GET /game 200 in 10087ms
+ GET /dashboard 200 in 11448ms
+ GET /game 200 in 336ms
+ GET /game 200 in 37ms
+ ✓ Compiled in 1776ms (368 modules)
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1197ms (403 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1044ms (405 modules)
+ GET /dashboard 500 in 3831ms
+ GET /_next/static/chunks/main.js 404 in 118ms
+ GET /_next/static/chunks/react-refresh.js 404 in 115ms
+ GET /_next/static/chunks/pages/_app.js 404 in 29ms
+ GET /_next/static/chunks/pages/_error.js 404 in 57ms
+ ✓ Compiled in 720ms (405 modules)
+ ✓ Compiled in 848ms (368 modules)
+ GET /game 200 in 52ms
+ GET /game 200 in 21ms
+ GET /game 200 in 26ms
+ GET /game 200 in 24ms
+ GET /game 200 in 30ms
+ GET /game 200 in 14ms
+ GET /game 200 in 16ms
+ ✓ Compiled in 5.4s (368 modules)
+ ✓ Compiled in 392ms (212 modules)
+ ✓ Compiled in 89ms (50 modules)
+ ✓ Compiled in 1079ms (212 modules)
+ ✓ Compiled in 749ms (212 modules)
+ ✓ Compiled in 696ms (212 modules)
+ ○ Compiling /game ...

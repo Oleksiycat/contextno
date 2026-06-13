@@ -1,0 +1,7 @@
+
+> kontekstno-backend@1.0.0 dev
+> node --watch src/index.js
+
+Failed running 'src/index.js'. Waiting for file changes before restarting...
+Restarting 'src/index.js'
+Failed running 'src/index.js'. Waiting for file changes before restarting...

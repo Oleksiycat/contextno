@@ -1,0 +1,26 @@
+
+> kontekstno-frontend@1.0.0 dev
+> next dev -p 3004
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3004
+
+ ✓ Starting...
+ ✓ Ready in 4.3s
+ ○ Compiling / ...
+ ✓ Compiled / in 9.9s (401 modules)
+ ✓ Compiled in 555ms (401 modules)
+ GET / 200 in 11593ms
+ ○ Compiling /game ...
+ ✓ Compiled /game in 576ms (399 modules)
+ GET /game 200 in 784ms
+ ✓ Compiled in 501ms (212 modules)
+ ✓ Compiled in 153ms (50 modules)
+ ✓ Compiled in 683ms (212 modules)
+ ○ Compiling /game ...
+ ✓ Compiled /game in 1240ms (399 modules)
+ GET /game 200 in 1509ms
+ ✓ Compiled in 1622ms (399 modules)
+ ✓ Compiled in 406ms (313 modules)
+ ✓ Compiled in 703ms (399 modules)
+[?25h

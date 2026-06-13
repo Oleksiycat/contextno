@@ -1,0 +1,48 @@
+Kontekstno setup
+
+Node version:
+v24.15.0
+
+Installing dependencies in services\ai-service...
+
+up to date, audited 148 packages in 6s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+4 vulnerabilities (3 high, 1 critical)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Installing dependencies in services\backend...
+
+up to date, audited 163 packages in 3s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+2 vulnerabilities (1 high, 1 critical)
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+Installing dependencies in services\frontend...
+
+up to date, audited 134 packages in 7s
+
+29 packages are looking for funding
+  run `npm fund` for details
+
+2 vulnerabilities (1 moderate, 1 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Setup finished. Dependencies are installed.
+Starting project in hidden windows...
+Project start requested.

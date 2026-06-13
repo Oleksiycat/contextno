@@ -1,0 +1,34 @@
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz_' -> 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz_' -> 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'E:\conte\kontekstno\services\frontend\.next\server\pages\index.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/pages/index' in E:\conte\kontekstno\services\frontend\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'E:\conte\kontekstno\services\frontend\.next\server\pages\index.js', but to 'Error: Can't resolve '../../../../.next/server/pages/index' in 'E:\conte\kontekstno\services\frontend\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/pages/index (expected E:\conte\kontekstno\services\frontend\.next\server\pages\index.js)
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\require.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\require.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\load-components.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\utils.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\utils.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack-config.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack-config.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'E:\conte\kontekstno\services\frontend\.next\server\pages\index.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/pages/index' in E:\conte\kontekstno\services\frontend\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'E:\conte\kontekstno\services\frontend\.next\server\pages\index.js', but to 'Error: Can't resolve '../../../../.next/server/pages/index' in 'E:\conte\kontekstno\services\frontend\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/pages/index (expected E:\conte\kontekstno\services\frontend\.next\server\pages\index.js)
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\require.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\require.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\load-components.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\utils.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\utils.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack-config.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack-config.js
+<w>  at file dependencies E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs E:\conte\kontekstno\services\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js

@@ -1,0 +1,7 @@
+Error: spawn EPERM
+    at ChildProcess.spawn (node:internal/child_process:441:11)
+    at spawn<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\6.pack.gz_' -> 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\6.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz_' -> 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz_' -> 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz_' -> 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz_' -> 'E:\conte\kontekstno\services\frontend\.next\cache\webpack\client-development\0.pack.gz'

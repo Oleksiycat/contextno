@@ -1,0 +1,104 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+model User {
+  id           String   @id @default(cuid())
+  tiktokUsername String @unique
+  points       Int      @default(0)
+  league       String   @default("Bronze")
+  wins         Int      @default(0)
+  streak       Int      @default(0)
+  createdAt    DateTime @default(now())
+  messages     Message[]
+  wins_rel     Winner[]
+  achievements UserAchievement[]
+}
+
+model Streamer {
+  id             String   @id @default(cuid())
+  username       String   @unique
+  tiktokUsername String   @unique
+  rooms          Room[]
+  createdAt      DateTime @default(now())
+}
+
+model Room {
+  id         String   @id @default(cuid())
+  name       String
+  streamerId String
+  streamer   Streamer @relation(fields: [streamerId], references: [id])
+  isActive   Boolean  @default(false)
+  createdAt  DateTime @default(now())
+}
+
+model Round {
+  id        String   @id @default(cuid())
+  roomId    String
+  wordId    String
+  word      Word     @relation(fields: [wordId], references: [id])
+  hint      String?
+  startedAt DateTime @default(now())
+  endedAt   DateTime?
+  messages  Message[]
+  winner    Winner?
+}
+
+model Word {
+  id       String  @id @default(cuid())
+  text     String  @unique
+  category String  @default("general")
+  hints    Hint[]
+  rounds   Round[]
+}
+
+model Hint {
+  id     String @id @default(cuid())
+  wordId String
+  word   Word   @relation(fields: [wordId], references: [id])
+  text   String
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  roundId   String
+  round     Round    @relation(fields: [roundId], references: [id])
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  text      String
+  score     Int?
+  createdAt DateTime @default(now())
+}
+
+model Winner {
+  id        String   @id @default(cuid())
+  roundId   String   @unique
+  round     Round    @relation(fields: [roundId], references: [id])
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  attempts  Int
+  createdAt DateTime @default(now())
+}
+
+model Achievement {
+  id          String            @id @default(cuid())
+  key         String            @unique
+  title       String
+  description String
+  users       UserAchievement[]
+}
+
+model UserAchievement {
+  id            String      @id @default(cuid())
+  userId        String
+  user          User        @relation(fields: [userId], references: [id])
+  achievementId String
+  achievement   Achievement @relation(fields: [achievementId], references: [id])
+  earnedAt      DateTime    @default(now())
+}
