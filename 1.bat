@@ -24,6 +24,18 @@ echo   RELEASE UPDATE !NEXT_VERSION!
 echo ================================
 echo.
 
+git fetch origin main
+if errorlevel 1 (
+  echo Failed to fetch origin/main.
+  exit /b 1
+)
+
+git pull --rebase --autostash origin main
+if errorlevel 1 (
+  echo Failed to rebase onto origin/main.
+  exit /b 1
+)
+
 git add -A -- . ":(exclude).logs" ":(exclude).dev-logs" ":(exclude)services/backend/prisma/dev.db" ":(exclude)services/backend/prisma/dev.db-journal"
 git commit -m "release update !NEXT_VERSION!"
 if errorlevel 1 (
