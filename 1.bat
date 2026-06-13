@@ -43,6 +43,12 @@ if errorlevel 1 (
   exit /b 1
 )
 
+git push origin "v!NEXT_VERSION!" --force
+if errorlevel 1 (
+  echo Tag push failed.
+  exit /b 1
+)
+
 echo.
 echo ================================
 echo   RELEASE PUBLISHED AS v!NEXT_VERSION!
