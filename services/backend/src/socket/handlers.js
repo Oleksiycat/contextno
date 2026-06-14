@@ -2,6 +2,7 @@ import { memoryStore } from "../services/tiktok.js";
 import { prisma } from "../lib/prisma.js";
 import { getRandomRussianWords, normalizeWord, isKnownRussianWord } from "../lib/words.js";
 import { selectHintWord } from "../lib/hint.js";
+import { resolveWordContext } from "../lib/word-context.js";
 
 function requireRoomId(payload) {
   const roomId = String(payload?.roomId || "").trim();
@@ -15,8 +16,9 @@ export async function startRound(io, { roomId, word, hint = "" }) {
   const randomWord = getRandomRussianWords(1)[0];
   const cleanWord = submittedWord || normalizeWord(savedWord) || randomWord;
   const providedHint = String(hint || "").trim();
-  const cleanHint = providedHint || await selectHintWord({ secret: cleanWord });
-  const wordCategory = providedHint || "general";
+  const wordContext = await resolveWordContext(cleanWord);
+  const cleanHint = providedHint || wordContext.categoryLabel || await selectHintWord({ secret: cleanWord });
+  const wordCategory = wordContext.category || "general";
 
   if (!cleanRoomId || !cleanWord || !isKnownRussianWord(cleanWord)) {
     return { ok: false, error: "Введите секретное слово из словаря хотя бы один раз." };

@@ -10,6 +10,15 @@ import { readJson, writeJson } from "../lib/storage";
 const SETTINGS_KEY = "kontekstno_settings";
 const SECRET_KEY = "kontekstno_last_secret";
 const DEFAULT_SETTINGS = { tiktokUsername: "", twitchUsername: "leee1n", roomId: "room" };
+const REFRESH_AFTER_GUESS_ERROR = new Set(["duplicate_word", "no_active_round"]);
+
+function getApiErrorMessage(error, fallback) {
+  const responseError = error?.response?.data?.error || error?.response?.data?.message;
+  if (responseError) return responseError;
+  if (error?.code === "ECONNABORTED") return "Сервер слишком долго отвечает.";
+  if (error?.request) return `Backend недоступен: ${API_URL}`;
+  return fallback;
+}
 
 export default function GamePage() {
   const [guesses, setGuesses] = useState([]);
@@ -236,7 +245,10 @@ export default function GamePage() {
       if (data.rank <= 1) setWinner({ username: data.username || "Ты", word: data.secretWord || validation.word });
     } catch (error) {
       setInput(validation.word);
-      setLastError(error.response?.data?.error || "Ошибка при отправке слова.");
+      setLastError(getApiErrorMessage(error, "Ошибка при отправке слова."));
+      if (REFRESH_AFTER_GUESS_ERROR.has(error?.response?.data?.reason)) {
+        await loadRoundState(settings.roomId);
+      }
     } finally {
       setLoadingGuess(false);
     }
@@ -278,7 +290,7 @@ export default function GamePage() {
       setAttempts((value) => value + 1);
       if (data.rank <= 1) setWinner({ username: data.username || "hint_bot", word: data.secretWord || data.word });
     } catch (error) {
-      setLastError(error.response?.data?.error || "Не удалось получить подсказку.");
+      setLastError(getApiErrorMessage(error, "Не удалось получить подсказку."));
     } finally {
       setLoadingGuess(false);
     }

@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { prisma } from "../lib/prisma.js";
 import { asyncRoute, sendError } from "../lib/http.js";
+import { resolveWordContext } from "../lib/word-context.js";
 import {
   normalizeWord,
   isValidWord,
@@ -40,7 +41,11 @@ router.get("/dictionary/check/:word", (req, res) => {
 
 router.post("/", asyncRoute(async (req, res) => {
   const text = normalizeWord(req.body?.text);
-  const category = String(req.body?.category || "general").trim() || "general";
+  const requestedCategory = String(req.body?.category || "").trim();
+  const wordContext = await resolveWordContext(text);
+  const category = wordContext.category !== "general"
+    ? wordContext.category
+    : (requestedCategory || wordContext.category || "general");
 
   if (!text || !isValidWord(text)) {
     return sendError(res, 400, "Invalid word");
@@ -52,7 +57,10 @@ router.post("/", asyncRoute(async (req, res) => {
     create: { text, category },
   });
 
-  res.status(201).json(word);
+  res.status(201).json({
+    ...word,
+    context: wordContext,
+  });
 }));
 
 router.delete("/:id", asyncRoute(async (req, res) => {

@@ -3,6 +3,7 @@ import axios from "axios";
 import { prisma } from "../lib/prisma.js";
 import { extractGuessWords, getRandomRussianWords, isAllowedGuess, normalizeWord } from "../lib/words.js";
 import { selectHintWord } from "../lib/hint.js";
+import { resolveWordContext } from "../lib/word-context.js";
 
 const DEFAULT_AI_SERVICE_URL = "http://localhost:8001";
 const AI_TIMEOUT_MS = Number(process.env.AI_TIMEOUT_MS || 120000);
@@ -171,6 +172,13 @@ export class TikTokService {
       return { ok: false, reason: "duplicate_word", word };
     }
 
+    const wordContext = await resolveWordContext(word);
+    await prisma.word.upsert({
+      where: { text: word },
+      update: { category: wordContext.category || "general" },
+      create: { text: word, category: wordContext.category || "general" },
+    });
+
     const similarity = await this.#getSimilarity(round.word, word);
 
     if (similarity == null) return { ok: false, reason: "ai_unavailable", word };
@@ -193,6 +201,7 @@ export class TikTokService {
       word: rank <= 1 ? MASKED_SECRET_WORD : word,
       rank,
       similarity,
+      context: wordContext,
     };
     if (rank <= 1) {
       guessData.secretWord = word;
@@ -299,14 +308,20 @@ export class TikTokService {
     const secretWord = savedWord || getRandomRussianWords(1)[0];
     if (!secretWord) return null;
 
+    const wordContext = await resolveWordContext(secretWord);
+
     const wordRecord = await prisma.word.upsert({
       where: { text: secretWord },
-      update: {},
-      create: { text: secretWord, category: "auto" },
+      update: { category: wordContext.category || "general" },
+      create: { text: secretWord, category: wordContext.category || "general" },
     });
 
     const round = await prisma.round.create({
-      data: { roomId: cleanRoomId, wordId: wordRecord.id, hint: await selectHintWord({ secret: secretWord }) || null },
+      data: {
+        roomId: cleanRoomId,
+        wordId: wordRecord.id,
+        hint: wordContext.categoryLabel || await selectHintWord({ secret: secretWord }) || null,
+      },
     });
 
     await memoryStore.set(`round:${cleanRoomId}`, JSON.stringify({ id: round.id, word: secretWord }));

@@ -3,7 +3,7 @@ import { pipeline, cos_sim } from "@xenova/transformers";
 import { SEMANTIC_GROUPS } from "./semantic-groups.js";
 
 const app = express();
-const PORT = Number(process.env.PORT || 8001);
+const PORT = Number(process.env.AI_SERVICE_PORT || 8001);
 const modelName = process.env.MODEL_NAME || "Xenova/paraphrase-multilingual-MiniLM-L12-v2";
 
 app.use(express.json({ limit: "64kb" }));
@@ -104,6 +104,25 @@ function getSimilarityMeta(word1, word2, rawSimilarity, similarity) {
   };
 }
 
+function classifyWord(word) {
+  const groups = semanticIndex.get(word) || [];
+  const rankedGroups = [...groups].sort((a, b) => (b.weight || 0) - (a.weight || 0));
+  const primary = rankedGroups[0] || null;
+
+  return {
+    word,
+    category: primary?.id || "general",
+    categoryLabel: primary?.label || "general",
+    meaning: primary?.context || "",
+    categories: rankedGroups.map((group) => ({
+      id: group.id,
+      label: group.label,
+      weight: group.weight,
+      context: group.context,
+    })),
+  };
+}
+
 function rankFromSimilarity(similarity) {
   return Math.max(0, Math.round((1 - similarity) * 10000));
 }
@@ -126,6 +145,20 @@ app.post("/similarity", async (req, res, next) => {
       rank: rankFromSimilarity(similarity),
       meta: getSimilarityMeta(word1, word2, rawSimilarity, similarity),
     });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.post("/word_context", async (req, res, next) => {
+  try {
+    const word = validateWord(req.body?.word);
+
+    if (!word) {
+      return res.status(400).json({ error: "Missing or invalid word" });
+    }
+
+    res.json(classifyWord(word));
   } catch (error) {
     next(error);
   }

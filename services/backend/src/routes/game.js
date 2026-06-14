@@ -9,12 +9,18 @@ import { selectHintWord } from "../lib/hint.js";
 const router = Router();
 
 const GUESS_ERROR_MESSAGES = {
+  missing_room: "Не выбрана комната.",
   no_active_round: "Раунд не запущен.",
   invalid_word: "Слово не принято.",
-  ai_unavailable: "AI-сервис пока не ответил.",
+  ai_unavailable: "AI-сервис пока не ответил. Подожди загрузку модели и попробуй еще раз.",
   waiting_for_starter: "Первое слово должен ввести web_user или победитель прошлого раунда.",
   duplicate_word: "Это слово уже было введено в этом раунде.",
 };
+
+function sendGuessError(res, status, reason, fallbackMessage) {
+  const error = GUESS_ERROR_MESSAGES[reason] || fallbackMessage || "Слово не удалось отправить.";
+  return res.status(status).json({ error, reason });
+}
 
 router.get("/leaderboard", asyncRoute(async (_, res) => {
   const users = await prisma.user.findMany({
@@ -110,19 +116,24 @@ router.post("/guess", asyncRoute(async (req, res) => {
   const username = String(req.body?.username || "web_user").trim() || "web_user";
   const validation = validateGuessInput(req.body?.word);
 
-  if (!roomId) return sendError(res, 400, "Missing roomId");
-  if (!validation.ok) return sendError(res, 400, validation.error);
+  if (!roomId) return sendGuessError(res, 400, "missing_room");
+  if (!validation.ok) {
+    return res.status(400).json({
+      error: validation.error,
+      reason: "invalid_word",
+    });
+  }
 
   const dupKey = `dup:${roomId}:${validation.word}`;
   const isDup = await memoryStore.get(dupKey);
-  if (isDup) return sendError(res, 400, "Слово уже было введено.");
+  if (isDup) return sendGuessError(res, 400, "duplicate_word");
 
   await memoryStore.set(dupKey, "1", "EX", 30);
 
   const guessData = await tiktokService.processGuess(roomId, username, validation.word);
   if (!guessData?.ok) {
     await memoryStore.del(dupKey);
-    return sendError(res, 400, GUESS_ERROR_MESSAGES[guessData?.reason] || "Раунд не запущен или слово не принято.");
+    return sendGuessError(res, 400, guessData?.reason, "Раунд не запущен или слово не принято.");
   }
 
   res.json(guessData.guess);
